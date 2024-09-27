@@ -29,7 +29,7 @@ export default function CSRPage() {
         setLoading(false);
       })
       .catch((error) => {
-        console.log("데이터 가져오는 것을 실패했습니다. :", error);
+        console.log("데이터 가져오기 실패 :", error);
         setLoading(false);
       });
   }, []);
