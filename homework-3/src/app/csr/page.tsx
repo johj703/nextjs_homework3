@@ -34,6 +34,10 @@ export default function CSRPage() {
       });
   }, []);
 
+  if (loading) {
+    return <p>로딩 중 입니다.</p>;
+  }
+
   return (
     <div>
       CSRPage
