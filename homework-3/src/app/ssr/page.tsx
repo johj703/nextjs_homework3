@@ -10,6 +10,8 @@ async function getPosts(): Promise<Post[]> {
   return res.json();
 }
 
+// 서버에 요청할 때마다 새롭게 응답을 새로 받는 방식
+//
 export default async function SSRPage() {
   const posts = await getPosts();
   return (
