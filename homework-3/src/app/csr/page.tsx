@@ -1,6 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
 
+type Post = {
+  id: number;
+  title: string;
+  author: string;
+};
+
 export default function CSRPage() {
   const [state, setState] = useState("");
 
