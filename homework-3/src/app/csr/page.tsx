@@ -41,7 +41,7 @@ export default function CSRPage() {
   return (
     <div>
       CSRPage
-      <div>{state}</div>
+      <pre>{JSON.stringify(posts)}</pre>
     </div>
   );
 }
