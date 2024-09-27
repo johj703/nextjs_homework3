@@ -1,4 +1,4 @@
-export default async function SSGPage() {
+export default async function SSRPage() {
   const res = await fetch("http://localhost:4000/posts", {
     cache: "no-store",
   });
